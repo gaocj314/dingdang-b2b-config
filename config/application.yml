@@ -4,7 +4,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@b2b-registry:8761/eureka/
+      defaultZone: http://eureka:123456@b2b-registry:8761/eureka/
 
 hystrix:
   command:
@@ -28,13 +28,3 @@ spring:
       enabled: false
     scheduled:
       skip-pattern: "^org.*HystrixStreamTask$"
-
-authserver:
-    hostname: b2b-auth-service
-    port: 5000
-    contextPath: /uaa
-
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current

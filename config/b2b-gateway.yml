@@ -23,9 +23,6 @@ ribbon:
 
 zuul:
   routes:
-    b2b-auth-service:
-      path: /uaa/**
-      serviceId: b2b-auth-service
     b2b-shop-service:
       path: /shop/**
       serviceId: b2b-shop-service
