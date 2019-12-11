@@ -20,13 +20,13 @@ ribbon:
 zuul:
   ignoredServices: '*'
   routes:
-    auth-service:
+    b2b-auth-service:
       path: /uaa/**
       stripPrefix: false
       sensitiveHeaders:
-    svca-service:
-      path: /svca/**
+    b2b-shop-service:
+      path: /shop/**
       sensitiveHeaders:
-    svcb-service:
-      path: /svcb/**
+    b2b-order-service:
+      path: /order/**
       sensitiveHeaders:
