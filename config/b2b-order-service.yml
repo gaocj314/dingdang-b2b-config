@@ -1,9 +1,5 @@
 server:
   port: 8070
-
-spring:
-  application:
-    name: b2b-order-service 
     
 msg: Hello
 

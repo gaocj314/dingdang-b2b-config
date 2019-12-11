@@ -1,10 +1,6 @@
 server:
   port: 8080
 
-spring:
-  application:
-    name: b2b-shop-service
-
 eureka:
   instance:
     metadata-map:
