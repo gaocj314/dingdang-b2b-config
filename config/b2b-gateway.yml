@@ -1,6 +1,10 @@
 server:
   port: 8060
 
+spring:
+  application:
+    name: b2b-gateway
+
 management:
   security:
     enabled: false
