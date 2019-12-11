@@ -2,8 +2,7 @@ server:
   port: 8080
 
 eureka:
-  instance:
-    metadata-map:
-      user.name: gaocj
-      user.password: 123456
+  client:
+    service-url:
+      defaultZone: http://eureka:123456@b2b-registry:8761/eureka/
 

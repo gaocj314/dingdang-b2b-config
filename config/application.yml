@@ -1,7 +1,4 @@
 eureka:
-  instance:
-    hostname: b2b-registry
-    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://eureka:123456@b2b-registry:8761/eureka/
