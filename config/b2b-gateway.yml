@@ -22,11 +22,10 @@ zuul:
   routes:
     b2b-auth-service:
       path: /uaa/**
-      stripPrefix: false
-      sensitiveHeaders:
+     serviceId: tensquare-search
     b2b-shop-service:
       path: /shop/**
-      sensitiveHeaders:
+      serviceId: tensquare-search
     b2b-order-service:
       path: /order/**
-      sensitiveHeaders:
+      serviceId: tensquare-search
