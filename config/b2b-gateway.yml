@@ -18,14 +18,13 @@ ribbon:
   ConnectTimeout: 10000
 
 zuul:
-  ignoredServices: '*'
   routes:
     b2b-auth-service:
       path: /uaa/**
-     serviceId: tensquare-search
+     serviceId: b2b-auth-service
     b2b-shop-service:
       path: /shop/**
-      serviceId: tensquare-search
+      serviceId: b2b-shop-service
     b2b-order-service:
       path: /order/**
-      serviceId: tensquare-search
+      serviceId: b2b-order-service
